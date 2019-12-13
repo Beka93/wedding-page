@@ -1,0 +1,261 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Single-direction margin declaration to establish vertical rhythm. */
+h1, h2, h3,
+h1, h2, h3, h4, h5, h6, hgroup,
+ul, ol, dd,
+p, figure,
+img,
+pre, table, fieldset, hr {
+  margin-bottom: 1.5rem;
+}
+
+body {
+  background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png') repeat center;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: #444349;
+}
+
+.locations,
+.program,
+.gifts,
+.faq,
+.contact {
+  width: 95%;
+  margin: 1.5rem auto;
+  padding: .5rem 1rem;
+  text-align: center;
+}
+
+h1, h2 {
+  font-family: 'Great Vibes', cursive;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: #bd806e;
+}
+
+a:hover {
+  color: #eda087;
+  transition: color .15s ease-in-out;
+}
+/*button*/
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #d2ba87;
+  color: white;
+  cursor: pointer;
+  padding: 15px 20px;
+  border-radius: 10px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+/*header style*/
+.cover {
+  background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg') no-repeat 70% center/cover;
+  text-align: center;
+  display: table;
+  height: 100vh;
+  width: 100vw;
+}
+.wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+.main_text {
+  margin: 0 auto;
+  padding: .625rem;
+  color: hsla(0, 0%, 100%, .9);
+  background: hsla(100, 0%, 0%, .5);
+  border-radius: 9999px;
+}
+.main_text h1 {
+  font-size: 3.15rem;
+  color: #d2ba87;
+  margin-bottom: 0;
+}
+.tagline {
+  font-size: 1.25rem;
+  letter-spacing: 0.5rem;
+}
+.tagline::after {
+  display: block;
+  content: "";
+  background-color: #fff;
+  height: 1px;
+  width: 12.515625rem;
+  margin: .5rem auto;
+}
+.date {
+  font-size: 1.25rem;
+  letter-spacing: 0.15rem;
+  vertical-align: middle;
+}
+.date::before,
+.date::after {
+  display: inline-block;
+  content: "";
+  background-color: #fff;
+  height: 1px;
+  width: 1.5rem;
+  vertical-align: middle;
+  margin: 0 .5rem;
+}
+.blurb img{
+  height: 7rem;
+}
+.blurb h3{
+  font-weight: 700;
+}
+.blurb div {
+  font-family: 'Muli', sans-serif;
+}
+.blurb::after {
+  display: block;
+  content: "";
+  background-color: #444349;
+  height: .18rem;
+  width: 10rem;
+  margin: 1.5rem auto;
+}
+/*program style*/
+.program {
+  width: 100vw;
+  background-color: hsla(100, 0%, 0%, 0.71);
+  color: #d2ba87;
+  font-family: 'Muli', sans-serif;
+  text-align: left;
+}
+.program h2{
+  font-family: 'Great Vibes', cursive;
+  text-align: center;
+   margin-top: 1rem;
+}
+.program p{
+  font-style: italic;
+}
+.program ul {
+  letter-spacing: 0.1rem;
+}
+/*gifts*/
+.gifts img{
+  height: 7rem;
+}
+.gifts p:last-child{
+  margin-bottom: 0;
+}
+.faq {
+  width: 100vw;
+  background-color: hsla(100, 0%, 0%, 0.71);
+  color: #d2ba87;
+  text-align: center;
+}
+.faq h2 {
+  margin-top: 1rem; /* To even out top and bottom margins. */
+}
+.faq p{
+  text-align: left;
+  font-family: 'Muli', sans-serif;
+}
+.question {
+  font-weight: 700;
+  margin-bottom: .5rem;
+}
+.questions::after {
+  display: block;
+  content: "";
+  background-color: #d2ba87;
+  height: 1px;
+  width: 50vw;
+  margin: 1.5rem auto;
+}
+.answer {
+  margin-bottom: 1.5rem;
+}
+/*footer style*/
+footer {
+  background-color: #606060;
+  color:#fff;
+  height: 10vh;
+  width: 100vw;
+  text-align: center;
+  font-family: 'Muli', sans-serif;
+  display: table;
+  font-size: .9rem;
+}
+.footer-wrapper{
+  display: table-cell;
+  vertical-align: middle;
+  padding: .5rem 1rem;
+}
+footer p {
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+/*header*/
+    .cover {
+      background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg') no-repeat center/cover;
+    }
+    .main_text {
+      width: 60vw;
+      padding: 1.25rem;
+    }
+    .main_text h1 {
+      font-size: 5rem;
+    }
+    .tagline {
+      text-transform: uppercase;
+      letter-spacing: 0.25rem;
+    }
+    /*locations*/
+    .blurb {
+      display: inline-block;
+      width: 30%;
+      padding: 1.5rem;
+      margin: .5rem;
+    }
+    .blurb::after{
+      display: none;
+    }
+    /*program*/
+    .program{
+      text-align: center;
+    }
+/*questions*/
+    .questions {
+      display: inline-block;
+      width: 30%;
+      padding: 1.5rem;
+      margin: .5rem;
+      vertical-align: top;
+    }
+    .questions::after{
+      display: none;
+    }
+    .questions h3{
+      text-align: left;
+    }
+}
